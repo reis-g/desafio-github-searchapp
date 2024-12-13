@@ -7,7 +7,3 @@ interface GitHubService {
     fun listRepos(@Path("username") username: String): Call<List<Repository>>
 }
 
-// Model: Repository.kt
-data class Repository(
-    val name: String,
-    val html_url: String
